@@ -3,9 +3,9 @@ def max_value(numbers):
         in the list.
     """
 
-    return ("largest number in the list!!!")
 
-
-
-if __name__ == "__main__":
-    print(max_value([1, 12, 2, 42, 8, 3]))
+    for i in range(len(numbers)):
+        if largest_num < numbers[i]:
+            largest_num = numbers[i]
+    return largest_num
+print(max_value([1, 12, 2, 42, 8, 3]))
